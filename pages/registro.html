@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/portalpagos.css">
+    <title>Portal de registro</title>
+</head>
+
+<body style="background-color:white;">
+    <div class="container">
+        <header>
+            <h1 class="titulo">Portal de Registros</h1>
+        </header>
+
+        <div class="agrupa">
+            <button type="button" class="btn btn-warning desplegable" data-toggle="collapse"
+                data-target="#paso2">Registro de Usuario</button>
+            <form id="paso1" class="desplegable" action="/action_page.php">
+                <h2>Ingresa tus datos personales:</h2>
+                <div class="form-group">
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" class="form-control" id="nombres" placeholder="Ingresa tu nombre completo"
+                        name="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" class="form-control" id="apellidos" placeholder="Ingresa tus apellidos"
+                        name="apellidos">
+                </div>
+                <div class="form-group">
+                    <label for="documento">Documento:</label>
+                    <input type="text" class="form-control" id="documento"
+                        placeholder="Ingresa tu documento de identidad" name="documento">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="Ingresa tu numero de teléfono"
+                        name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electronico"
+                        name="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Contraseña:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu contraseña"
+                        name="pswd">
+                </div>
+                <div class="form-group">
+                    <label for="c_pwd">Confirma tu contraseña:</label>
+                    <input type="pwd" class="form-control" id="c_pwd" placeholder="Confirma tu contraseña"
+                        name="c_pswd">
+                </div>
+                <h2>Ingresa tus datos de envio:</h2>
+                <div class="form-group">
+                    <label for="dpto">Departamento:</label>
+                    <input type="text" class="form-control" id="dpto" placeholder="Departamento" name="dpto">
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" name="ciudad">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Dirección" name="direccion">
+                </div>
+                <button type="submit" class="btn btn-secondary boton">Enviar</button>
+            </form>
+        </div>
+
+        <a href="/index.html"><button type="button" class="boton_inicio btn desplegable">Volver al inicio</button></a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

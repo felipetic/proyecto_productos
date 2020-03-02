@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/portalpagos.css">
+    <title>Portal de Inicio Sesión</title>
+</head>
+
+<body style="background-color:white;">
+    <div class="container">
+        <header>
+            <h1 class="titulo">Inicio de Sesión</h1>
+        </header>
+
+        <div class="agrupa">
+            <button type="button" class="btn btn-warning desplegable " data-toggle="collapse"
+                data-target="#paso1">Inicio de Sesión</button>
+            <form id="paso1" action="/action_page.php">
+                <h2>Ingresa tu usuario y contraseña:</h2>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electronico"
+                        name="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Contraseña:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu contraseña"
+                        name="pswd">
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Recordar contraseña
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-secondary boton">Enviar</button>
+            </form>
+
+        </div>
+        <a href="/index.html"><button type="button" class="boton_inicio btn desplegable">Volver al inicio</button></a>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
